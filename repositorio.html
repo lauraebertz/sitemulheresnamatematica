@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Repositório - Mulheres nas Ciências Exatas</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/biografias.css">
+
+    <style>
+        /* ESPAÇAMENTO ENTRE AS SEÇÕES */
+
+        .conteudo-principal > section {
+            margin-top: 45px;
+            margin-bottom: 55px;
+        }
+
+        /* ORGANIZAÇÃO DOS QUADRADOS */
+
+        .conteudo-principal .lista-biografias {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 35px;
+            margin: 30px 0 45px;
+        }
+
+        /* QUADRADOS MENORES */
+
+        .conteudo-principal .lista-biografias .quadrado-info {
+            padding: 22px;
+            min-height: 0;
+            height: auto;
+            width: 100%;
+        }
+
+        /* TÍTULOS DOS QUADRADOS */
+
+        .conteudo-principal .lista-biografias .quadrado-info h3 {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+
+        /* TEXTO DOS QUADRADOS */
+
+        .conteudo-principal .lista-biografias .quadrado-info p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        /* RESPONSIVIDADE PARA CELULARES */
+
+        @media (max-width: 768px) {
+
+            .conteudo-principal .lista-biografias {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .conteudo-principal .lista-biografias .quadrado-info {
+                padding: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ====================================
+         CABEÇALHO
+    ===================================== -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <!-- LOGO -->
+                <div class="logo-container">
+                    <img
+                        src="images/Logomodificadosemfundo.png"
+                        alt="Logo do Projeto">
+                </div>
+
+                <!-- TÍTULO -->
+                <h1 class="titulo-projeto">
+                    MULHERES NAS CIÊNCIAS EXATAS
+                </h1>
+
+                <!-- MENU RESPONSIVO -->
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-controls="menuPrincipal">
+                    ☰
+                </button>
+
+                <!-- MENU PRINCIPAL -->
+                <ul class="menu-principal" id="menuPrincipal">
+
+                    <!-- INÍCIO -->
+                    <li class="dropdown">
+
+                        <a href="index.html">
+                            Início
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="index.html">
+                                    Página Inicial
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <!-- PESQUISAS -->
+                    <li class="dropdown">
+
+                        <a href="pesquisa-projeto.html">
+                            Pesquisas do Projeto
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="pesquisa-projeto.html">
+                                    Pesquisa do Projeto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="resultados.html">
+                                    Resultados
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- MULHERES NA CIÊNCIA -->
+                    <li class="dropdown">
+
+                        <a href="cientistas.html">
+                            Mulheres na Ciência
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="cientistas.html">
+                                    Todas as Cientistas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="computacao.html">
+                                    Computação
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="matematica.html">
+                                    Matemática
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="astronomia.html">
+                                    Astronomia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fisica.html">
+                                    Física
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- REPOSITÓRIO -->
+                    <li class="dropdown">
+
+                        <a href="repositorio.html">
+                            Repositório
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="repositorio.html">
+                                    Repositório
+                                </a>
+                            </li>
+
+                            </ul>
+
+                    </li>
+
+                    <!-- SUGESTÃO -->
+                    <li class="dropdown">
+
+                        <a href="sugestao.html">
+                            Sugestão
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="sugestao.html">
+                                    Sugira uma Cientista
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <!-- SOBRE O PROJETO -->
+                    <li class="dropdown">
+
+                        <a href="projeto.html">
+                            Sobre o Projeto
+                            <span class="seta">▾</span>
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="projeto.html">
+                                    Sobre o Projeto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="autoras.html">
+                                    Autoras
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ====================================
+         CONTEÚDO DO REPOSITÓRIO
+    ===================================== -->
+
+    <main class="conteudo-principal">
+
+        <h2>Repositório Científico</h2>
+
+        <p>
+            Este espaço reúne artigos científicos,
+            materiais de leitura, fontes confiáveis
+            e pesquisas desenvolvidas pelo projeto
+            Mulheres na Matemática e na Computação.
+        </p>
+
+        <p>
+            Buscamos ampliar o acesso ao conhecimento
+            e incentivar reflexões sobre a participação
+            feminina na ciência, valorizando histórias,
+            descobertas e contribuições muitas vezes
+            pouco reconhecidas.
+        </p>
+
+
+        <!-- ====================================
+             ARTIGOS E MATERIAIS DE LEITURA
+        ===================================== -->
+
+        <section>
+
+            <h3>Artigos e Materiais de Leitura</h3>
+
+            <p>
+                Selecionamos materiais que discutem
+                a história das mulheres na ciência,
+                suas contribuições e os desafios
+                relacionados às desigualdades de gênero.
+            </p>
+
+            <div class="lista-biografias">
+
+                <!-- QUINDIM -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>
+                        14 Mulheres Cientistas que
+                        Marcaram a História
+                    </h3>
+
+                    <p>
+                        <strong>Fonte:</strong>
+                        Clube Quindim
+                    </p>
+
+                    <p>
+                        Artigo que apresenta trajetórias
+                        de mulheres que contribuíram para
+                        diferentes áreas científicas,
+                        incluindo Ada Lovelace,
+                        Marie Curie, Katherine Johnson
+                        e Jaqueline Goes de Jesus.
+                    </p>
+
+                    <p>
+                        Uma leitura acessível para
+                        conhecer descobertas importantes
+                        e refletir sobre a valorização
+                        das cientistas.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://quindim.com.br/blog/mulheres-cientistas/amp/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ler artigo →
+                        </a>
+                    </p>
+
+                </article>
+
+
+                <!-- PEPSIC -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>
+                        Desafios das Mulheres na
+                        Carreira Científica no Brasil
+                    </h3>
+
+                    <p>
+                        <strong>Fonte:</strong>
+                        Revista Brasileira de Orientação Profissional
+                    </p>
+
+                    <p>
+                        Artigo científico que investiga
+                        os obstáculos enfrentados por
+                        pesquisadoras brasileiras.
+                    </p>
+
+                    <p>
+                        Discute estereótipos de gênero,
+                        dificuldades de progressão
+                        profissional, sobrecarga de
+                        trabalho e desigualdades
+                        no ambiente acadêmico.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://pepsic.scielo.org/scielo.php?script=sci_arttext&amp;pid=S1679-33902021000100002"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ler artigo científico →
+                        </a>
+                    </p>
+
+                </article>
+
+
+                <!-- REVISTA CIÊNCIAS EM FOCO -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>
+                        A Importância das Mulheres
+                        na História da Ciência
+                    </h3>
+
+                    <p>
+                        <strong>Fonte:</strong>
+                        Revista Ciências em Foco —
+                        Unicamp, 2022
+                    </p>
+
+                    <p>
+                        Artigo que apresenta trajetórias
+                        de pesquisadoras como Rosalind
+                        Franklin, Marie Curie e Katherine
+                        Johnson, destacando contribuições
+                        científicas e situações de
+                        preconceito.
+                    </p>
+
+                    <p>
+                        <strong>Autores:</strong>
+                        Maria Theresa Lucas Lourenço,
+                        Victor Abrão Araújo e
+                        Fábio Gabriel Nascibem.
+                    </p>
+
+                    <!-- ARTIGO NO SITE DA UNICAMP -->
+
+                    <p>
+                        <a
+                            href="https://econtents.sbu.unicamp.br/inpec/index.php/cef/article/view/16101"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Ver publicação →
+                        </a>
+                    </p>
+
+                    <!-- PDF ONLINE DA UNICAMP -->
+
+                    <p>
+                        <a
+                            href="https://econtents.sbu.unicamp.br/inpec/index.php/cef/article/view/16101/12953"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Abrir PDF online →
+                        </a>
+                    </p>
+
+                </article>
+
+
+                <!-- NASA -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>NASA</h3>
+
+                    <p>
+                        <strong>Área:</strong>
+                        Ciência e exploração espacial
+                    </p>
+
+                    <p>
+                        A agência espacial dos Estados
+                        Unidos reúne informações sobre
+                        missões espaciais, descobertas
+                        científicas e pesquisadoras
+                        que contribuíram para a tecnologia
+                        e a exploração do espaço.
+                    </p>
+
+                    <p>
+                        É uma fonte importante para
+                        conhecer trajetórias como
+                        as de Margaret Hamilton
+                        e Katherine Johnson.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://www.nasa.gov/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Acessar NASA →
+                        </a>
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             PESQUISAS DO PROJETO
+        ===================================== -->
+
+        <section>
+
+            <h3>Pesquisas do Nosso Projeto</h3>
+
+            <p>
+                Conheça as pesquisas de campo
+                realizadas pelas estudantes do projeto
+                no IFRS – Campus Farroupilha.
+            </p>
+
+            <div class="lista-biografias">
+
+                <!-- PESQUISA SOBRE ADA LOVELACE -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>
+                        Conhecimentos sobre Ada Lovelace
+                    </h3>
+
+                    <p>
+                        Pesquisa realizada para identificar
+                        o conhecimento dos participantes
+                        sobre Ada Lovelace e sua importância
+                        para a história da Computação.
+                    </p>
+
+                    <p>
+                        Os resultados revelaram lacunas
+                        no conhecimento sobre a cientista
+                        e reforçaram a importância
+                        da divulgação científica.
+                    </p>
+
+                    <p>
+                        <a href="pesquisa-projeto.html">
+                            Conhecer pesquisa →
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="resultados.html#pesquisa1">
+                            Ver resultados →
+                        </a>
+                    </p>
+
+                </article>
+
+
+                <!-- PESQUISA SOBRE GÊNERO -->
+
+                <article class="quadrado-info card-cientista">
+
+                    <h3>
+                        Gênero e a Escolha dos Cursos
+                    </h3>
+
+                    <p>
+                        Pesquisa realizada com estudantes
+                        dos cursos de Administração,
+                        Informática e Eletromecânica
+                        do IFRS – Campus Farroupilha.
+                    </p>
+
+                    <p>
+                        A investigação buscou compreender
+                        fatores envolvidos nas escolhas
+                        acadêmicas e a possível influência
+                        dos estereótipos de gênero
+                        na participação feminina
+                        nas áreas científicas
+                        e tecnológicas.
+                    </p>
+
+                    <p>
+                        <a href="pesquisa-projeto.html">
+                            Conhecer pesquisa →
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="resultados.html#pesquisa2">
+                            Ver resultados →
+                        </a>
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ====================================
+         RODAPÉ
+    ===================================== -->
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <img
+                src="images/Logomodificadosemfundo.png"
+                alt="Logo Mulheres nas Ciências Exatas">
+
+            <p>
+                Projeto de divulgação científica
+            </p>
+
+            <p>
+                IFRS – Campus Farroupilha
+            </p>
+
+            <p>
+                Laura Pereira Ebertz e
+                Maria Eduarda Radaelli Rossi
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

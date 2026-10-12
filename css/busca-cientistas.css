@@ -1,0 +1,6 @@
+/* Estilo exclusivo dos novos campos. Nenhuma regra antiga foi alterada. */
+.busca-cientistas { margin: 0 0 28px; padding: 20px; background: var(--branco, white); border: 1px solid #ded6d3; border-radius: 14px; box-shadow: var(--sombra, 0 4px 14px rgba(0,0,0,.1)); }
+.busca-cientistas label { display: block; color: var(--vinho, #442432); font-weight: bold; margin: 8px 0 6px; }
+.busca-cientistas input, .busca-cientistas select { display: block; width: 100%; max-width: 100%; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 15px; color: var(--texto, #2f2a2c); background: var(--branco, white); padding: 12px; border: 1px solid #cfc7c4; border-radius: 6px; }
+.busca-cientistas input:focus-visible, .busca-cientistas select:focus-visible { outline: 2px solid var(--petrol, #43777a); outline-offset: 1px; }
+.busca-cientistas [role="status"] { margin: 12px 0 0; font-size: 14px; }

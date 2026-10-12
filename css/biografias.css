@@ -1,0 +1,44 @@
+
+.lista-biografias {
+    display: grid;
+    gap: 25px;
+}
+
+.lista-biografias .card-cientista {
+    min-height: 0;
+}
+
+.lista-biografias .card-cientista h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--vinho);
+    margin-bottom: 8px;
+}
+
+.lista-biografias .card-cientista p {
+    margin: 0 0 12px;
+}
+
+.lista-biografias .card-cientista a {
+    overflow-wrap: anywhere;
+}
+
+.card-cientista[hidden] {
+    display: none !important;
+}
+
+/* Retratos das cientistas: somente os blocos novos. */
+.apresentacao-cientista {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.imagem-cientista { width: 100%; height: 290px; overflow: hidden; border-radius: 12px; }
+.imagem-cientista img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.texto-cientista { min-width: 0; }
+.texto-cientista h3 { margin-top: 0; }
+@media (max-width: 768px) {
+  .apresentacao-cientista { grid-template-columns: 1fr; gap: 20px; }
+  .imagem-cientista { max-width: 350px; height: 260px; margin: 0 auto; }
+}
